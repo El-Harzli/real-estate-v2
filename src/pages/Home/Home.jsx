@@ -1,16 +1,14 @@
-import Button from "./components/Button";
-import heroTp from "../../assets/hero_transparent.png";
+import Button from "@components/Button";
+import heroTp from "@assets/hero_transparent.png";
+import Badges from "@components/Badges";
 
 import { FiHome } from "react-icons/fi";
 import { HiOutlineEmojiHappy } from "react-icons/hi";
 import { TfiMedallAlt } from "react-icons/tfi";
 
-import Badges from "./components/Badges";
-
 function Home() {
   return (
     <section className="flex flex-col items-stretch min-h-dvh text-center bg-primary-500 pt-12">
-
       {/* Top label */}
       <p className="uppercase text-[11px] font-medium text-accent-500 tracking-[0.18em] mb-1 wrapper">
         Premium Real Estate in Tangier
@@ -67,7 +65,6 @@ function Home() {
       <p className="text-[12px] text-secondary mb-8 wrapper">
         Trusted by homeowners & investors across Tangier
       </p>
-
     </section>
   );
 }
