@@ -1,4 +1,9 @@
-function Button({ variant = "primary", label, customCss }) {
+function Button({
+  variant = "primary",
+  label,
+  customCss,
+  isBaseActive = true,
+}) {
   const base =
     "text-base font-medium whitespace-nowrap rounded-2xl px-6 py-3 cursor-pointer transition-all duration-300";
 
@@ -20,7 +25,11 @@ function Button({ variant = "primary", label, customCss }) {
   };
 
   return (
-    <button className={`${base} ${variants[variant]} ${customCss}`}>
+    <button
+      className={`${isBaseActive ? base : ""} ${
+        variants[variant]
+      } ${customCss}`}
+    >
       {label}
     </button>
   );

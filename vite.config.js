@@ -20,10 +20,11 @@ export default defineConfig({
       '@pages': path.resolve(__dirname, 'src/pages'),
       '@assets': path.resolve(__dirname, 'src/assets'),
       '@src': path.resolve(__dirname, 'src'),
+      '@utils': path.resolve(__dirname, 'src/utils'),
     },
   },
   server: {
     host: "0.0.0.0",
-    port: 3000,
+    port: 3001,
   },
 });

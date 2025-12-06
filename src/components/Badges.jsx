@@ -3,7 +3,7 @@ function Badges({ Icon, label, count }) {
     <span
       className="
         flex items-center gap-x-2
-        px-3 py-2
+        px-2 py-2
         border border-gold-400/40
         rounded-xl
         bg-white/60
