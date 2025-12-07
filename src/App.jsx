@@ -4,7 +4,7 @@ import { Routes, Route } from "react-router";
 
 function App() {
   return (
-    <div className="">
+    <div className="font-space_grotest">
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />

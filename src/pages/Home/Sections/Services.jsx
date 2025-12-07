@@ -91,7 +91,7 @@ function Services() {
             />
             <div className="h-[1px] w-8 bg-gradient-to-l from-transparent to-accent-500"></div>
           </div>
-          <h2 className="font-manrope text-[32px] font-semibold tracking-tight leading-[1.2] text-main mb-2">
+          <h2 className="text-[32px] font-semibold tracking-tight leading-[1.2] text-main mb-2">
             Premium Services
           </h2>
           <p className="text-[13px] text-secondary max-w-[280px] mx-auto">
@@ -176,7 +176,7 @@ function Services() {
                     {/* Top Section */}
                     <div className="flex items-start justify-between mb-6 relative z-10">
                       <div>
-                        <span className="font-manrope text-[72px] font-bold leading-none bg-gradient-to-br from-accent-500/15 via-accent-500/10 to-transparent bg-clip-text text-transparent">
+                        <span className="text-[72px] font-bold leading-none bg-gradient-to-br from-accent-500/15 via-accent-500/10 to-transparent bg-clip-text text-transparent">
                           {service.number}
                         </span>
                         {isActive && (
@@ -208,7 +208,7 @@ function Services() {
                     </div>
 
                     {/* Title */}
-                    <h3 className="font-manrope text-[24px] font-semibold text-main mb-3 leading-[1.2]">
+                    <h3 className="text-[24px] font-semibold text-main mb-3 leading-[1.2]">
                       {service.title}
                     </h3>
 

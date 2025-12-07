@@ -9,29 +9,29 @@ import { TfiMedallAlt } from "react-icons/tfi";
 function Hero() {
 
   return (
-    <section className="flex flex-col items-stretch h-fit bg-primary-500 text-center pt-6 overflow-hidden">
+    <section className="flex flex-col items-stretch h-fit bg-primary-500 text-center py-9 overflow-hidden">
       {/* Top label */}
-      <p className="uppercase text-[11px] font-medium text-accent-500 tracking-[0.18em] mb-1 wrapper">
+      <p className="uppercase text-[10px] font-medium text-accent-500 tracking-[0.18em] wrapper">
         Premium Real Estate in Tangier
       </p>
 
       {/* Main Heading */}
-      <h1 className="font-manrope text-[34px] font-semibold tracking-tight leading-[1.12] text-main mt-3 wrapper">
+      <h1 className="text-[34px] font-semibold tracking-tight leading-[1.14] text-main mt-2 wrapper">
         Find a Place <br />
-        You Will Call Home
+        You will call Home
       </h1>
 
       {/* Subtext */}
-      <p className="font-medium text-[15px] text-secondary max-w-[85%] mx-auto mt-3 leading-[1.65] wrapper">
+      <p className="font-medium text-[15px] text-secondary max-w-[85%] mx-auto mt-2.5 leading-[1.65] wrapper">
         Luxury real estate and curated rentals <br />
         in the heart of Tangier.
       </p>
 
       {/* Elegant divider */}
-      <div className="w-14 h-0.5 bg-accent-500/30 mx-auto mt-4 rounded-full"></div>
+      <div className="w-14 h-0.5 bg-accent-500/30 mx-auto mt-3 rounded-full"></div>
 
       {/* Hero Image */}
-      <div className="relative w-full mt-6 px-7 shrink-0">
+      <div className="relative w-full mt-4 px-6 shrink-0">
         <div className="absolute inset-0 bg-accent-500/15 blur-3xl rounded-[55px]"></div>
 
         <img
@@ -42,31 +42,31 @@ function Hero() {
       </div>
 
       {/* Buttons */}
-      <div className="w-full flex flex-col gap-y-2.5 mt-6 wrapper">
+      <div className="w-full flex flex-col gap-y-3 mt-6 wrapper">
         <Button
           variant="primary"
           label="Browse Properties"
-          customCss="w-full py-3 text-[15px]"
+          customCss="w-full py-3.5 "
         />
 
         <Button
           variant="outline"
           label="Get in Touch"
-          customCss="w-full py-3 text-[15px]"
+          customCss="w-full py-3.5 "
         />
       </div>
 
       {/* Trust Badges */}
-      <div className="flex flex-wrap items-center justify-center gap-2 mt-5 wrapper">
+      <div className="flex flex-wrap items-center justify-center gap-1 gap-y-2 mt-8 px-3">
         <Badges Icon={TfiMedallAlt} label="Years Expertise" count={15} />
         <Badges Icon={FiHome} label="Properties Listed" count={120} />
         <Badges Icon={HiOutlineEmojiHappy} label="Happy Clients" count={300} />
       </div>
 
       {/* Scroll Indicator */}
-      <div className="relative w-5 h-10 border-2 border-accent-400/70 rounded-full mx-auto my-6 flex items-start justify-center opacity-70">
+      {/* <div className="relative w-5 h-10 border-2 border-accent-400/70 rounded-full mx-auto my-6 flex items-start justify-center opacity-70">
         <span className="absolute bottom-1 block w-1.75 h-1.75 bg-accent-400 rounded-full animate-scroll-pulse"></span>
-      </div>
+      </div> */}
     </section>
   );
 }

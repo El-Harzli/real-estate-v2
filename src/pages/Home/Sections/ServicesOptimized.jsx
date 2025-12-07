@@ -75,7 +75,7 @@ function ServicesOptimized() {
   const cardTransition = { type: "tween", duration: 0.32, ease: "easeOut" };
 
   return (
-    <section className="relative bg-gradient-to-b from-primary-600 via-primary-500 to-primary-600 py-20 overflow-hidden">
+    <section className="relative bg-linear-to-b from-primary-600 via-primary-500 to-primary-600 py-9 overflow-hidden">
       {/* Decorative Background Elements (reduced blur & opacity for performance) */}
       <div className="absolute inset-0 opacity-[0.02] pointer-events-none">
         <div className="absolute top-10 right-10 w-48 h-48 bg-accent-500 rounded-full blur-[48px]"></div>
@@ -84,17 +84,15 @@ function ServicesOptimized() {
 
       <div className="wrapper relative z-10">
         {/* Header */}
-        <div className="text-center mb-16">
-          <div className="flex items-center justify-center gap-2 mb-4">
-            <div className="h-[1px] w-8 bg-gradient-to-r from-transparent to-accent-500"></div>
-            <IoSparklesOutline className="w-4 h-4 text-accent-500" />
+        <div className="text-center mb-8">
+          <div className="flex items-center justify-center gap-4 mb-4">
+            <div className="h-px w-12 bg-linear-to-r from-transparent to-accent-500"></div>
             <p className="uppercase text-[11px] font-medium text-accent-500 tracking-[0.22em]">
               What We Offer
             </p>
-            <IoSparklesOutline className="w-4 h-4 text-accent-500" />
-            <div className="h-[1px] w-8 bg-gradient-to-l from-transparent to-accent-500"></div>
+            <div className="h-px w-12 bg-linear-to-l from-transparent to-accent-500"></div>
           </div>
-          <h2 className="font-manrope text-[32px] font-semibold tracking-tight leading-[1.2] text-main mb-2">
+          <h2 className="text-[32px] font-semibold tracking-tight leading-[1.2] text-main mb-2">
             Premium Services
           </h2>
           <p className="text-[13px] text-secondary max-w-[280px] mx-auto">
@@ -156,7 +154,7 @@ function ServicesOptimized() {
 
                     <div className="flex items-start justify-between mb-6 relative z-10">
                       <div>
-                        <span className="font-manrope text-[72px] font-bold leading-none bg-gradient-to-br from-accent-500/15 via-accent-500/10 to-transparent bg-clip-text text-transparent">
+                        <span className="text-[72px] font-bold leading-none bg-linear-to-br from-accent-500/15 via-accent-500/10 to-transparent bg-clip-text text-transparent">
                           {service.number}
                         </span>
                         {isActive && (
@@ -169,7 +167,7 @@ function ServicesOptimized() {
                       <div
                         className="
                           w-16 h-16 rounded-[20px]
-                          bg-gradient-to-br from-accent-500/10 to-accent-500/5
+                          bg-linear-to-br from-accent-500/10 to-accent-500/5
                           border border-accent-500/30
                           flex items-center justify-center
                           shadow-[0_2px_8px_rgba(109,33,60,0.06)]
@@ -182,7 +180,7 @@ function ServicesOptimized() {
                       </div>
                     </div>
 
-                    <h3 className="font-manrope text-[24px] font-semibold text-main mb-3 leading-[1.2]">
+                    <h3 className="text-[24px] font-semibold text-main mb-3 leading-[1.2]">
                       {service.title}
                     </h3>
 
@@ -198,7 +196,7 @@ function ServicesOptimized() {
                         className="
                           mt-6 self-end
                           w-14 h-14 rounded-full
-                          bg-gradient-to-br from-accent-500 to-accent-600
+                          bg-linear-to-br from-accent-500 to-accent-600
                           flex items-center justify-center
                           text-white
                           hover:shadow-[0_6px_18px_rgba(109,33,60,0.12)]
@@ -230,7 +228,7 @@ function ServicesOptimized() {
               <div
                 className={`h-2 rounded-full transition-all duration-300 ${
                   currentIndex === index
-                    ? "w-10 bg-gradient-to-r from-accent-500 to-accent-600"
+                    ? "w-10 bg-linear-to-r from-accent-500 to-accent-600"
                     : "w-2 bg-accent-500/25 group-hover:bg-accent-500/50"
                 }`}
               />
